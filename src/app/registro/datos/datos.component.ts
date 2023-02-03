@@ -14,8 +14,18 @@ export class DatosComponent {
   // edades =["22"];
 
   agregar(nombre:string, apellido:string, edad:string){
-    this.dataPersonas.push({"primerNombre":nombre,"primerApellido":apellido, "Edad":edad})
     console.log(this.dataPersonas)
+    this.dataPersonas.push({"primerNombre":nombre,"primerApellido":apellido, "edad":edad})
+
+    
+    for(let i = 0 ; i<this.dataPersonas.length;i++){
+
+      if(this.dataPersonas[i].edad<18){
+        this.dataPersonas[i].mayor="No"
+      } else{
+        this.dataPersonas[i].mayor="Si"
+      }
+    }
   }
 
 }

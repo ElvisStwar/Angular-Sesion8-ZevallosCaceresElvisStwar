@@ -31,13 +31,15 @@
                         <th scope="col">NOMBRE</th>
                         <th scope="col">APELLIDO</th>
                         <th scope="col">EDAD</th>
+                        <th scope="col">Mayor de edad</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr class="" *ngFor="let datos of dataPersonas"> 
                         <td scope="row">{{datos.primerNombre}}</td>
                         <td scope="row">{{datos.primerApellido}}</td>
-                        <td scope="row">{{datos.Edad}}</td>
+                        <td scope="row">{{datos.edad}}</td>
+                        <td scope="row">{{datos.mayor}}</td>
                     </tr>
                     
                 </tbody>
