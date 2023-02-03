@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'actividad-8';
+
+  cursos=["mate","fisica"];
+  frutas=["manzana","pera","papaya"]
 }

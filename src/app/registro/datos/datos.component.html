@@ -1,1 +1,47 @@
-<p>datos works!</p>
+<div class="text-center mt-5">
+    <div class="border rounded-3 mx-auto p-5 text-center" style="width: 300px;">
+        <div>
+            <label for="">Nombre </label>
+            <br>
+            <input class="form-control" type="text" #nombre>
+        </div>
+        <br>
+        <div>
+            <label for="">Apellido </label>
+            <br>
+            <input class="form-control" type="text" #apellido>
+        </div>
+        <br>
+        <div>
+            <label for="">Edad </label>
+            <br>
+            <input class="form-control" type="number" #edad>
+        </div>
+        <br>
+        <div>
+            <button class="btn btn-primary" (click)="agregar(nombre.value, apellido.value, edad.value)">Agregar datos</button>
+        </div>
+    </div>
+    <br>
+    <div class="mx-auto m-5 p-5" style=>
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">NOMBRE</th>
+                        <th scope="col">APELLIDO</th>
+                        <th scope="col">EDAD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="" *ngFor="let datos of dataPersonas"> 
+                        <td scope="row">{{datos.primerNombre}}</td>
+                        <td scope="row">{{datos.primerApellido}}</td>
+                        <td scope="row">{{datos.Edad}}</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
